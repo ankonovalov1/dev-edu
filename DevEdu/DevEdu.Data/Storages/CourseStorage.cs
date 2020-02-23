@@ -1,8 +1,8 @@
 ﻿using DevEdu.Data.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Text;
+using System.Data.SqlClient;
 
 
 namespace DevEdu.Data.Storages
@@ -13,6 +13,7 @@ namespace DevEdu.Data.Storages
 
         public List<ThemeDetails> GetThemeDeatails()
         {
+            SqlConnection newc = new SqlConnection();
             List<ThemeDetails> res = new List<ThemeDetails>();
             string sqlExpression = "";
             using (SqlConnection connection = new SqlConnection(connectionString))
