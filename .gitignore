@@ -18,3 +18,7 @@ DevEdu/.vs/DevEdu/v16/Server/sqlite3/storage.ide-shm
 *.props
 *.json
 DevEdu/.vs/DevEdu/v16/.suo
+*.cache
+*.json
+*.ide-wal
+*.props
